@@ -2,81 +2,90 @@
 <html lang="fr-FR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nous Contacter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous Contacter</title>
 </head>
 
 <body>
 
-  <header>
-     <header>
-    <div>
-      <nav>
-        <a href="index.html">Accueil</a>
-        <a href="menu.html">Menu</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+<header>
+    <div class="navbar">
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </div>
-  </header>
-  </header>
+</header>
 
-  <fieldset>
+<img src="image/contacter.jpg" alt="Nous Contacter" width="800" height="550">
+
+<fieldset>
     <legend>
-      <h1>Page Contact Général</h1>
+        <h1>Nous contacter</h1>
     </legend>
 
-    <div>
-      <label>Votre Nom :</label>
-      <input type="text" required>
+    <div class="nom">
+        <label for="lastname">Votre Nom <sup></sup></label>
+        <input type="text" required id="lastname" name="lastname">
+    </div>
+
+    <div class="prenom">
+        <label for="firstname">Votre Prénom <sup></sup></label>
+        <input type="text" required id="firstname" name="firstname">
     </div>
 
     <div>
-      <label>Votre Prénom :</label>
-      <input type="text" required>
+        <label>M. Mme. Mlle</label>
+        <select>
+            <option value="masculin">Monsieur</option>
+            <option value="feminin">Madame</option>
+            <option value="mademoiselle">Mademoiselle</option>
+        </select>
     </div>
 
     <div>
-      <label>M. Mme. Mlle</label>
-      <select>
-        <option value="masculin">Monsieur</option>
-        <option value="feminin">Madame</option>
-        <option value="mademoiselle">Mademoiselle</option>
-      </select>
+        <label for="email">Votre Email :</label>
+        <input type="email" required placeholder="example@gmail.com" id="email" name="email">
     </div>
 
     <div>
-      <label>Votre Email :</label>
-      <input type="email" required placeholder="example@gmail.com">
+        <label>Tel :</label>
+        <input type="tel" required>
     </div>
 
     <div>
-      <label>Tel :</label>
-      <input type="tel" required>
+        <label>Message :</label>
+        <textarea name="message" id="message" placeholder="Votre avis"></textarea>
     </div>
 
+    <div class="buttons">
+        <button type="submit">Envoyez votre email</button>
+        <button type="reset">Réinitialiser tout</button>
+    </div>
+
+</fieldset>
+
+<section>
     <div>
-      <label>Message :</label>
-      <textarea name="message" id="message" placeholder="Votre avis"></textarea>
-      <input type="checkbox">
-      <label for="condition">Je suis d'accord avec ce que je viens d'écrire et j'affirme avoir été honnête</label>
-
-      <label for="">Pièces Jointes</label>
-      <input type="file">
+        <h3>Notre adresse</h3>
+        <p>
+            35 rue de démonstration <br>
+            13000 Marseille <br>
+            France
+        </p>
     </div>
 
-    <div>
-      <input type="radio">
-      <label for="cdu">J'accepte les conditions générales d'utilisations</label>
-    </div>
+    <h3>Où nous trouver</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!3m2!1sfr!2sfr!4v1752528938165!5m2!1sfr!2sfr!6m8!1m7!1sz3sDdUvUg8sgxD_ZSNg2_g!2m2!1d43.28619545919356!2d5.383498865100518!3f241.30507120649665!4f-10.32745479345995!5f0.7820865974627469"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
 
-    <div>
-      <button type="submit">Soummetez</button>
-      <button type="reset">Réinitialiser tout</button>
-    </div>
-    
-
-  </fieldset>
+<footer>
+    <address>35 rue de démonstration</address>
+</footer>
 
 </body>
 
